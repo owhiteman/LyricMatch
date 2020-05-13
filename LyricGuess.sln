@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyricGuess", "LyricGuess\LyricGuess.csproj", "{CE253506-3BD4-48C0-B6BD-BC0375D60508}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE253506-3BD4-48C0-B6BD-BC0375D60508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE253506-3BD4-48C0-B6BD-BC0375D60508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE253506-3BD4-48C0-B6BD-BC0375D60508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE253506-3BD4-48C0-B6BD-BC0375D60508}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

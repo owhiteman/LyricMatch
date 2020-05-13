@@ -1,0 +1,57 @@
+﻿@page
+@model IndexModel
+
+@{
+    GenerateSongs obj = new GenerateSongs();
+}
+
+
+
+    <div class="text-center" style="margin:auto;">
+        <h1 class="display-4">MATCH THE LYRIC</h1>
+        <br />
+        <p id="lyric"></p>
+        <br />
+        <div id="loader" class="loader"></div>
+        <div id="songs">
+            <button id="song1" onclick="validateAnswer(this, 1)"></button>
+            <button id="song2" onclick="validateAnswer(this, 2)"></button>
+            <button id="song3" onclick="validateAnswer(this, 3)"></button>
+            <button id="song4" onclick="validateAnswer(this, 4)"></button>
+        </div>
+        <p id="streak" style="font-size:160%;">STREAK: 0</p>
+        <div id="answer">
+            <div id="songImage"></div>
+            <div id="songDetails">
+                <p id="title"></p>
+                <p id="artist"></p>
+                <p id="album"></p>
+                <button id="nextSong" onclick="loadSongs()">Next Song</button>
+            </div>
+            <div id="player"></div>
+        </div>
+
+
+
+    </div>
+
+<div id="songList">
+    <p id="songList1">@obj.generateSong()</p>
+    <p id="songList2">@obj.generateSong()</p>
+    <p id="songList3">@obj.generateSong()</p>
+    <p id="songList4">@obj.generateSong()</p>
+</div>
+
+
+<script>
+    async function refreshSongList() {
+        $("#songList").load(window.location.href + " #songList");
+    }
+    function updateSongs() {
+        loadSongs();
+        refreshSongList()
+    }
+    function updateSong(i) {
+        $("#songList" + i).load(window.location.href + " #songList" + i);
+    }
+    </script>
