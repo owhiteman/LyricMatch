@@ -3,6 +3,7 @@
 
 @{
     GenerateSongs obj = new GenerateSongs();
+    await obj.GetBlobAsync();
 }
 
 
@@ -41,6 +42,7 @@
     <p id="songList3">@obj.generateSong()</p>
     <p id="songList4">@obj.generateSong()</p>
 </div>
+
 
 
 <script>
